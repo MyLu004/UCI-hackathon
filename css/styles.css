@@ -393,7 +393,7 @@ font-size: var(--font-size-xsm);
 
 .btn-light{
     background-color: var(--light-cir);
-    color: var(--dark-clr);
+    color: var(--light-clr);
 }
 
 .btn-light:hover{
