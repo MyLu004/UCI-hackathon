@@ -15,14 +15,14 @@
     --font-weight-normal: 400;
     --font-weight-bold: 700;
     
-    --margin-sm: 1rem;
-    --margin-md: 2rem;
+    --margin-sm: 5rem;
+    --margin-md: 15rem;
     --margin-lg: 3rem;
 
     --section-spacing: 8rem;
 
     --gap-sm: 1.5rem;
-    --gap-md: 2rem;
+    --gap-md: 4rem;
     --gap-lg: 4rem;
 }
 /* Base styles */
@@ -48,7 +48,7 @@ body{
 }
 
 a{
-    color: var(--dark-clr);
+    color: var(--light-clr);
     text-decoration: none;
 }
 
@@ -97,22 +97,35 @@ padding: 0 1.5rem;
     position:fixed;
     top: 0;
     left: 0;
-    width: 100;
+    width: 100vw;
     z-index: 999;
+    background-color: gray;
 }
 
 .nav{
+    /* width:100%; */
     height: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: inherit;
+    gap: 30px;
 }
 
-.Logo{
+/* .active.container{
+    position: sticky;
+    width:100vw;
+    background-color: red;
+} */
+
+.logo{
     front-size: var(--margin-md);
     font-weight: var(--font-weight-bold);
     color: var(--accent-cir);
+}
+
+.logo txt{
+    color: black;
 }
 
 .menu-toggle-icon{
@@ -135,6 +148,11 @@ padding: 0 1.5rem;
 
 .list-link{
     position: relative;
+    color: black;
+}
+
+.list-link:hover{
+    color:red;
 }
 
 .list-link::after,
@@ -154,6 +172,7 @@ padding: 0 1.5rem;
 
 .List-Link.current::after{
     opacity: 1 !important;
+    
 }
 .List-Link:hover::after{
     opacity: 1;
@@ -298,6 +317,10 @@ padding: 0 1.5rem;
     transition: background-color .25s;
 }
 
+.info_a{
+    color:white;
+}
+
 .btn:hover{
     background-color: #00be85;
 }
@@ -330,6 +353,7 @@ padding: 0 1.5rem;
 }
 
 .beach-data-inner{
+    color: white;
     width: 100%;
     background-color: var(--light-cir);
     padding: 1rem;
@@ -382,6 +406,14 @@ font-size: var(--font-size-xsm);
     max-width: 78rem;
     text-align: center;
     color: var(--light-cir);
+}
+
+.newsletter-container-inner h2{
+    color:white;
+}
+
+.newsletter-container-inner p{
+    color:white;
 }
 
 .btn-group{
